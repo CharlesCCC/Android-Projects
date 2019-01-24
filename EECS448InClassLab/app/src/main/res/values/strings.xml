@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EECS448-InClass-Lab</string>
+    <string name="title_activity_service">ServiceActivity</string>
+</resources>
