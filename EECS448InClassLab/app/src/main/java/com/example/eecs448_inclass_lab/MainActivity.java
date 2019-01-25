@@ -26,4 +26,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ServiceActivity.class);
         startActivity(intent);
     }
+
+    public void OnBrodcast(View view) {
+        Intent intent = new Intent("com.example.coursedemo");
+        intent.putExtra("msg","test event");
+        sendBroadcast(intent);
+    }
+
+    public void OnDB(View view) {
+        Intent intent = new Intent(this,DBActivity.class);
+        startActivity(intent);
+    }
 }
