@@ -19,7 +19,8 @@
             android:name=".StudentContentProvider"
             android:authorities="com.example.eecs448_inclass_lab"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true">
+        </provider>
 
         <service
             android:name=".RandomNumberService"
@@ -29,11 +30,12 @@
         <activity
             android:name=".ServiceActivity"
             android:label="@string/title_activity_service"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
