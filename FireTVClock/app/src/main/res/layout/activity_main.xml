@@ -7,6 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
     android:keepScreenOn="true">
 
     <LinearLayout
@@ -29,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:format12Hour="hh:mm:ss a"
-            android:textColor="#03A9F4"
+            android:textColor="#E0F7FA"
             android:textSize="180sp"
             android:textStyle="bold"
             android:timeZone="GMT-0500" />
