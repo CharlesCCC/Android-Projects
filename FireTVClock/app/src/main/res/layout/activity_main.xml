@@ -21,9 +21,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:format12Hour="hh:mm:ss"
-            android:format24Hour="hh:mm:ss"
             android:textColor="#E0F7FA"
-            android:textSize="220sp"
+            android:textSize="300sp"
             android:textStyle="bold"
             android:timeZone="GMT-0500" />
     </LinearLayout>
