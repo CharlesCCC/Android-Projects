@@ -31,4 +31,12 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("time", date);
         sendBroadcast(intent);
     }
+
+    public void GotoServiceActivity(View view) {
+        Intent intent = new Intent(this,TimeServiceActivity.class);
+        startActivity(intent);
+    }
+
+
+
 }

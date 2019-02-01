@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.Toast;
 
-import java.util.Arrays;
-
 public class MyBroadcastReceiver extends BroadcastReceiver {
 
     @Override

@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".TimeServiceActivity"
+            android:label="@string/title_activity_time_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <service
             android:name=".CurrentTimeService"
             android:enabled="true"
@@ -19,7 +24,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.eecs448.assignment1"></action>
+                <action android:name="com.eecs448.assignment1" />
             </intent-filter>
         </receiver>
 

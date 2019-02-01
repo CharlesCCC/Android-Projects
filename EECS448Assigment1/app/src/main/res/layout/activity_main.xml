@@ -42,14 +42,18 @@
             android:format12Hour="hh:mm:ss a"
             android:textColor="#03A9F4"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:timeZone="GMT-0500" />
+            android:textStyle="bold" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Send Broadcast"
                 android:onClick="SendBroadcast"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to Service"
+                android:onClick="GotoServiceActivity"/>
     </LinearLayout>
 
     <TextView

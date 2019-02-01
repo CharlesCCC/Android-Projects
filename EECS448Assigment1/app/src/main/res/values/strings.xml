@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EECS448-Assigment1</string>
+    <string name="title_activity_time_service">TimeServiceActivity</string>
 </resources>
