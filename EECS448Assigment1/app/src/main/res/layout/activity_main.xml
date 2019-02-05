@@ -54,6 +54,11 @@
                 android:layout_height="wrap_content"
                 android:text="Go to Service"
                 android:onClick="GotoServiceActivity"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go DB Activity"
+                android:onClick="GoToContactActivity"/>
     </LinearLayout>
 
     <TextView

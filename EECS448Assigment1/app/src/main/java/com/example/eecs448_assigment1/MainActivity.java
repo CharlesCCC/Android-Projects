@@ -38,5 +38,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    public void GoToContactActivity(View view) {
+        Intent intent = new Intent(this,ContactActivity.class);
+        startActivity(intent);
+    }
 }

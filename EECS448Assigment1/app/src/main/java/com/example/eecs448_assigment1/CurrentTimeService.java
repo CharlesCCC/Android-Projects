@@ -35,9 +35,11 @@ public class CurrentTimeService extends Service {
     private Runnable CurrentTimeToastTextRunnable = new Runnable () {
         public void run() {
             Toast.makeText(CurrentTimeService.this, "Current Time: " + sdf.format(System.currentTimeMillis()), Toast.LENGTH_SHORT).show();
+            //TODO - here I could update the textView ??? or not the best thing to do, consider here is the service; only controller is able to do it ?
             getCurrentTimeToastText();
         }
     };
+
 
     @Override
     public void onDestroy() {
