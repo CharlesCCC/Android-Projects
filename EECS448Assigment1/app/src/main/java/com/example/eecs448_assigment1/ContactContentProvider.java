@@ -1,11 +1,14 @@
 package com.example.eecs448_assigment1;
 
 import android.content.ContentProvider;
+import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.UriMatcher;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.util.Log;
 
 public class ContactContentProvider extends ContentProvider {
 
@@ -29,21 +32,41 @@ public class ContactContentProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-        // Implement this to handle requests to delete one or more rows.
-        throw new UnsupportedOperationException("Not yet implemented");
+        int deleteCount = 0;
+        switch (uriMatcher.match(uri)){
+            case CONTACTS:
+                deleteCount = db.delete(ContactDB.TABLE,selection,selectionArgs);
+                break;
+            case CONTACT:
+                deleteCount = db.delete(ContactDB.TABLE,selection,selectionArgs);
+            default:
+                throw new IllegalArgumentException("This is an Unknown URI " + uri);
+        }
+        getContext().getContentResolver().notifyChange(uri, null); //???
+        return deleteCount;
     }
 
     @Override
     public String getType(Uri uri) {
-        // TODO: Implement this to handle requests for the MIME type of the data
-        // at the given URI.
-        throw new UnsupportedOperationException("Not yet implemented");
+        switch (uriMatcher.match(uri)) {
+            case 1:
+                return "vnd.android.cursor.dir/contacts";
+            default:
+                throw new IllegalArgumentException("This is an Unknown URI " + uri);
+        }
     }
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        // TODO: Implement this to handle requests to insert a new row.
-        throw new UnsupportedOperationException("Not yet implemented");
+        Log.i("insert uri: ", uri.toString());
+        long id = db.insert(ContactDB.TABLE,null,values);
+
+        if(id > 0){
+            Uri _uri = ContentUris.withAppendedId(CONTENT_URI,id);
+            getContext().getContentResolver().notifyChange(_uri,null);
+            return _uri;
+        }
+        throw new SQLException("Insertion Failed for URI :" + uri);
     }
 
     @Override
@@ -55,14 +78,36 @@ public class ContactContentProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
-        // TODO: Implement this to handle query requests from clients.
-        throw new UnsupportedOperationException("Not yet implemented");
+        Log.i("query uri: ", uri.toString());
+        Cursor cursor;
+        switch (uriMatcher.match(uri)){
+            case 1:
+                cursor = db.query(ContactDB.TABLE, ContactDB.ALL_COLUMNS,selection,null,null,null,ContactDB.NAME + "ASC");
+                break;
+            default:
+                throw new IllegalArgumentException("This is an Unknown URI " + uri);
+        }
+        cursor.setNotificationUri(getContext().getContentResolver(), uri);
+        return cursor;
+
     }
 
     @Override
     public int update(Uri uri, ContentValues values, String selection,
                       String[] selectionArgs) {
-        // TODO: Implement this to handle requests to update one or more rows.
-        throw new UnsupportedOperationException("Not yet implemented");
+        int updateCount = 0;
+
+        switch (uriMatcher.match(uri)){
+            case 1:
+                updateCount = db.update(ContactDB.TABLE,values,selection,selectionArgs); //??
+                break;
+            default:
+                throw new IllegalArgumentException("This is an Unknown URI " + uri);
+        }
+        getContext().getContentResolver().notifyChange(uri,null); //??
+
+        return  updateCount;
+
+
     }
 }
