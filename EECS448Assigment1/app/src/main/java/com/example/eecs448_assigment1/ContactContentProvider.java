@@ -13,7 +13,7 @@ import android.util.Log;
 public class ContactContentProvider extends ContentProvider {
 
     public static final String AUTHORITY = "com.example.eecs448_assigment1";
-    public static final String BASE_PATH = "contacts";
+    public static final String BASE_PATH = "contact";
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + BASE_PATH);
     public static final UriMatcher uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
@@ -24,7 +24,7 @@ public class ContactContentProvider extends ContentProvider {
 
     static{
         uriMatcher.addURI(AUTHORITY,BASE_PATH,CONTACTS);
-        uriMatcher.addURI(AUTHORITY,BASE_PATH,CONTACT);
+        uriMatcher.addURI(AUTHORITY,BASE_PATH+"/#",CONTACT);  //??
     }
 
     public ContactContentProvider() {
@@ -82,7 +82,7 @@ public class ContactContentProvider extends ContentProvider {
         Cursor cursor;
         switch (uriMatcher.match(uri)){
             case 1:
-                cursor = db.query(ContactDB.TABLE, ContactDB.ALL_COLUMNS,selection,null,null,null,ContactDB.NAME + "ASC");
+                cursor = db.query(ContactDB.TABLE, ContactDB.ALL_COLUMNS,selection,null,null,null,ContactDB.NAME + " ASC");
                 break;
             default:
                 throw new IllegalArgumentException("This is an Unknown URI " + uri);
