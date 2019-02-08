@@ -30,6 +30,7 @@ public class ContactActivity extends AppCompatActivity {
         mPhone = findViewById(R.id.text_phone);
         mDBview = findViewById(R.id.dbview);
 
+        onShowAll(this.mDBview);
     }
 
     public void onInsert(View view) {
@@ -48,14 +49,17 @@ public class ContactActivity extends AppCompatActivity {
         onShowAll(view);
     }
 
-    public void onShowAll(View view) {
+    public void onShowAll(View view) {  // why Could not find method onShow(View) in a parent or ancestor Context for android:onClick attribute defined on view class ?
         Uri uri = ContactContentProvider.CONTENT_URI;
         Cursor cursor = this.getContentResolver().query(uri, null, null, null, null);
         StringBuilder sb = new StringBuilder();
         while(cursor.moveToNext()){
-            sb.append(cursor.getString(0) + ",");
-            sb.append(cursor.getString(1) + ",");
-            sb.append(cursor.getString(2) + ",");
+            sb.append("ID:" + cursor.getString(0) + ",");
+            sb.append("\n");
+            sb.append("Name:" + cursor.getString(1) + ",");
+            sb.append("\n");
+            sb.append("Phone:" + cursor.getString(2) + ",");
+            sb.append("\n");
             sb.append("\n");
         }
         mDBview.setText(sb.toString());
