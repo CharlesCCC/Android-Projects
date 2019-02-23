@@ -16,14 +16,18 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextClock
+        <com.example.firetvclock.AutoResizeTextClock
             android:id="@+id/textClock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:format12Hour="hh:mm:ss"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:format24Hour="hh:mm:ss"
             android:textColor="#E0F7FA"
-            android:textSize="300sp"
             android:textStyle="bold"
-            android:timeZone="GMT-0500" />
+            android:textSize="96sp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeStepGranularity="2sp"
+            />
     </LinearLayout>
 </LinearLayout>

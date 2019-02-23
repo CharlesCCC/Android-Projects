@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         View v = getLayoutInflater().inflate(R.layout.activity_main,null);
         v.setKeepScreenOn(true);
         setContentView(v);
