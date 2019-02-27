@@ -1,8 +1,10 @@
-package com.example.firetvclock;
+package net.comeshare.firetvclock;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import net.comeshare.firetvclock.R;
 
 public class MainActivity extends AppCompatActivity {
 

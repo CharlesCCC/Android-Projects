@@ -1,4 +1,4 @@
-package com.example.firetvclock;
+package net.comeshare.firetvclock;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

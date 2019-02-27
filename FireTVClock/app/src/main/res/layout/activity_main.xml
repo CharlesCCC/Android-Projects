@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context="net.comeshare.firetvclock.MainActivity"
     android:background="@color/colorPrimary"
     android:keepScreenOn="true">
 
@@ -16,7 +16,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.example.firetvclock.AutoResizeTextClock
+        <net.comeshare.firetvclock.AutoResizeTextClock
             android:id="@+id/textClock"
             android:layout_width="match_parent"
             android:layout_height="200dp"

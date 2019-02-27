@@ -1,4 +1,4 @@
-package com.example.firetvclock;
+package net.comeshare.firetvclock;
 
 import org.junit.Test;
 

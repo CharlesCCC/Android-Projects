@@ -1,4 +1,4 @@
-package com.example.firetvclock;
+package net.comeshare.firetvclock;
 
 /**
  *               DO WHAT YOU WANT TO PUBLIC LICENSE
