@@ -6,7 +6,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package fr.xgouchet.axml.CompressedXmlParser;
+package EECS448.Assignment2;
 
 
 import org.w3c.dom.Document;
@@ -19,8 +19,9 @@ import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-public class ApkPermissionStatsAnalysisV2 {
+public class ApkPermissionStatsAnalysis {
 	public static void main(String[] args) throws IOException {
+        //passing the apk Folder path as 1st argument 2nd argument as the full xml name;
 		String folder = args[0];
 		File[] files = new File(folder).listFiles();
 		HashMap<String, Integer> permissionCount = new HashMap<>();
