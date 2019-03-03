@@ -2,10 +2,7 @@ package fr.xgouchet.axml.CompressedXmlParser;
 
 
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -45,7 +42,7 @@ public class DumpApkPackname {
 						names.add(attr.getNodeValue());
 					}
 				}
-				// dumpNode(doc.getChildNodes().item(0), "");
+				dumpNode(doc.getChildNodes().item(0), "");
 			} catch (Exception e) {
 				System.err.println("Failed AXML decode: " + e);
 				e.printStackTrace();
@@ -66,8 +63,24 @@ public class DumpApkPackname {
 	}
 
 	private static void dumpNode(Node node, String indent) {
+
 		System.out.println(
 				indent + node.getNodeName() + " " + attrsToString(node.getAttributes()) + " -> " + node.getNodeValue());
+
+		try
+		{
+			String filename= "MyFile.txt";
+			FileWriter fw = new FileWriter(filename,true); //the true will append the new data
+			fw.write(
+					//appends the string to the file
+					indent + node.getNodeName() + " " + attrsToString(node.getAttributes()) + " -> " + node.getNodeValue()+"\n");
+			fw.close();
+		}
+		catch(IOException ioe)
+		{
+			System.err.println("IOException: " + ioe.getMessage());
+		}
+
 		NodeList children = node.getChildNodes();
 		for (int i = 0, n = children.getLength(); i < n; ++i)
 			dumpNode(children.item(i), indent + "   ");
