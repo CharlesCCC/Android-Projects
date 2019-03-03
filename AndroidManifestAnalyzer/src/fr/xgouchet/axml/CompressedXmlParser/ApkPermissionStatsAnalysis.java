@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
@@ -44,6 +45,7 @@ public class ApkPermissionStatsAnalysis {
                         out.println(attr.getNodeValue());
                     }
                 }
+
                 dumpNode(doc.getChildNodes().item(0), "",attrs,0);
             } catch (Exception e) {
                 System.err.println("Failed AXML decode: " + e);
@@ -126,11 +128,18 @@ public class ApkPermissionStatsAnalysis {
         }
 
         if(count > 0){
+            String name = null;
+            for (int i = 0, n = attrs.getLength(); i < n; ++i) {
+                Node attr = attrs.item(i);
+                if (attr.getNodeName().equals("package")) {
+                    name = attr.getNodeValue();
+                }
+            }
             try
             {
                 String filename= "PermissionList.csv";
                 FileWriter fw = new FileWriter(filename,true); //the true will append the new data
-                fw.write(", , , , Total: " + count + "\n");
+                fw.write("Package Name : " + name + " ,uses-permission, , Total:," + count + "\n");
                 fw.close();
             }
             catch(IOException ioe)
