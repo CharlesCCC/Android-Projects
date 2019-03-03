@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4210e76b-3e93-4cb2-8125-44e054a21396" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysisV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PermissionList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/PermissionList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PermissionList.numbers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MyFile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkPackname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkPackname.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +23,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkPackname.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="585">
-                    <caret line="64" column="57" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="57" />
+                  <state relative-caret-position="540">
+                    <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -42,8 +43,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkXml.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="780">
-                    <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+                  <state relative-caret-position="360">
+                    <caret line="33" selection-start-line="33" selection-end-line="33" />
                   </state>
                 </provider>
               </entry>
@@ -55,47 +56,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysis.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysisV2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="126" column="69" selection-start-line="126" selection-start-column="69" selection-end-line="126" selection-end-column="69" />
+            <state relative-caret-position="329">
+              <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#3258#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PermissionList.csv">
-          <provider editor-type-id="csv-table-editor">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TotalPermissionCount.csv">
+          <provider editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-              <column index="0" width="180" />
-              <column index="1" width="178" />
-              <column index="2" width="495" />
-              <column index="3" width="100" />
-              <column index="4" width="100" />
-              <column index="5" width="100" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyFile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="100" selection-start-column="93" selection-end-column="100" />
+              <column index="0" width="540" />
+              <column index="1" width="299" />
+              <column index="2" width="100" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PermissionList.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="96" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="96" />
+        <entry file="file://$PROJECT_DIR$/AppPermissionCount.csv">
+          <provider editor-type-id="csv-text-editor">
+            <state relative-caret-position="-737" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
+              <column index="0" width="100" />
+              <column index="1" width="100" />
+              <column index="2" width="100" />
             </state>
           </provider>
         </entry>
@@ -116,6 +110,10 @@
       <find>Loudtalks</find>
       <find>attrsToString(node.getAttributes())</find>
       <find>indent</find>
+      <find>ACCESS_FINE_LOCATION</find>
+      <find>Key:[android:name=android.permission.ACCESS_FINE_LOCATION, android:required=false], Value:,1</find>
+      <find>Key:[android:name=android.permission.ACCESS_FINE_LOCATION, android:required=false]</find>
+      <find>Key:[android:name=android.permission.ACCESS_FINE_LOCATION</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,16 +125,20 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/appids.txt" />
         <option value="$PROJECT_DIR$/detail.txt" />
-        <option value="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkPackname.java" />
         <option value="$PROJECT_DIR$/PermissionList.txt" />
-        <option value="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysis.java" />
         <option value="$PROJECT_DIR$/PermissionList.csv" />
+        <option value="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkPackname.java" />
+        <option value="$PROJECT_DIR$/MyFile.txt" />
+        <option value="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysis.java" />
+        <option value="$PROJECT_DIR$/AppPermissionCount.csv" />
+        <option value="$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysisV2.java" />
+        <option value="$PROJECT_DIR$/TotalPermissionCount.csv" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="27" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="104" />
+    <option name="y" value="30" />
     <option name="width" value="1719" />
     <option name="height" value="966" />
   </component>
@@ -147,7 +149,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,12 +171,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.xgouchet.axml.CompressedXmlParser" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -192,9 +200,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApkPermissionStatsAnalysis">
+  <component name="RunManager" selected="Application.ApkPermissionStatsAnalysisV2">
     <configuration name="ApkPermissionStatsAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.xgouchet.axml.CompressedXmlParser.ApkPermissionStatsAnalysis" />
+      <module name="AndroidManifestAnalyzer" />
+      <option name="PROGRAM_PARAMETERS" value="selectedAPKs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.xgouchet.axml.CompressedXmlParser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApkPermissionStatsAnalysisV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.xgouchet.axml.CompressedXmlParser.ApkPermissionStatsAnalysisV2" />
       <module name="AndroidManifestAnalyzer" />
       <option name="PROGRAM_PARAMETERS" value="selectedAPKs" />
       <extension name="coverage">
@@ -239,12 +261,14 @@
       <item itemvalue="Application.DumpApkPackname" />
       <item itemvalue="Application.DumpApkXml" />
       <item itemvalue="Application.ApkPermissionStatsAnalysis" />
+      <item itemvalue="Application.ApkPermissionStatsAnalysisV2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApkPermissionStatsAnalysis" />
+        <item itemvalue="Application.ApkPermissionStatsAnalysisV2" />
         <item itemvalue="Application.DumpApkPackname" />
         <item itemvalue="Application.DumpApkXml" />
+        <item itemvalue="Application.ApkPermissionStatsAnalysis" />
       </list>
     </recent_temporary>
   </component>
@@ -276,16 +300,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="27" width="1719" height="966" extended-state="0" />
+    <frame x="104" y="30" width="1719" height="966" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21168754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21407275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32951945" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34210527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993135" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -382,40 +406,58 @@
     <entry file="file://$PROJECT_DIR$/magiccanvas/AndroidManifest.xml" />
     <entry file="file://$PROJECT_DIR$/loudtalks/AndroidManifest.xml" />
     <entry file="file://$PROJECT_DIR$/imvideo/AndroidManifest.xml" />
-    <entry file="file://$PROJECT_DIR$/appids.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1715" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/MyFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="100" selection-start-column="93" selection-end-column="100" />
+    <entry file="file://$PROJECT_DIR$/PermissionList.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="3701" column="108" lean-forward="true" selection-start-line="3701" selection-start-column="108" selection-end-line="3701" selection-end-column="108" />
         </state>
       </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
+          <column index="0" width="180" />
+          <column index="1" width="178" />
+          <column index="2" width="495" />
+          <column index="3" width="100" />
+          <column index="4" width="100" />
+          <column index="5" width="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkXml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/DumpApkPackname.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="64" column="57" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="57" />
+        <state relative-caret-position="540">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appids.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18495">
+          <caret line="1233" column="67" lean-forward="true" selection-start-line="1233" selection-start-column="67" selection-end-line="1233" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -428,35 +470,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="126" column="69" selection-start-line="126" selection-start-column="69" selection-end-line="126" selection-end-column="69" />
+        <state relative-caret-position="1421">
+          <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PermissionList.csv">
-      <provider editor-type-id="csv-table-editor">
+    <entry file="file://$PROJECT_DIR$/TotalPermissionCount.csv">
+      <provider editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-          <column index="0" width="180" />
-          <column index="1" width="178" />
-          <column index="2" width="495" />
-          <column index="3" width="100" />
-          <column index="4" width="100" />
-          <column index="5" width="100" />
+          <column index="0" width="540" />
+          <column index="1" width="299" />
+          <column index="2" width="100" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="3701" column="108" lean-forward="true" selection-start-line="3701" selection-start-column="108" selection-end-line="3701" selection-end-column="108" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppPermissionCount.csv">
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="-737" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
+          <column index="0" width="100" />
+          <column index="1" width="100" />
+          <column index="2" width="100" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/xgouchet/axml/CompressedXmlParser/ApkPermissionStatsAnalysisV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="162" column="13" lean-forward="true" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#3258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="Copyright.UI">
         <settings>
           <last-edited>Congchen Cai</last-edited>
@@ -469,9 +537,68 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AndroidManifestAnalyzer</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

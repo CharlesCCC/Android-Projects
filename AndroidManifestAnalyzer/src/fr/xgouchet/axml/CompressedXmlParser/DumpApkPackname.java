@@ -42,7 +42,7 @@ public class DumpApkPackname {
 						names.add(attr.getNodeValue());
 					}
 				}
-				dumpNode(doc.getChildNodes().item(0), "");
+				// dumpNode(doc.getChildNodes().item(0), "");
 			} catch (Exception e) {
 				System.err.println("Failed AXML decode: " + e);
 				e.printStackTrace();

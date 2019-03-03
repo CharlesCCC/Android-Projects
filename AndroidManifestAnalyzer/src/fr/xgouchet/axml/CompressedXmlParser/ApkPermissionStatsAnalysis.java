@@ -162,19 +162,4 @@ public class ApkPermissionStatsAnalysis {
         sb.append(']');
         return sb.toString();
     }
-
-    private void writeToCSV(String input){
-        try
-        {
-            String filename= "PermissionList.csv";
-            FileWriter fw = new FileWriter(filename,true); //the true will append the new data
-
-            fw.write(input);
-            fw.close();
-        }
-        catch(IOException ioe)
-        {
-            System.err.println("IOException: " + ioe.getMessage());
-        }
-    }
 }
